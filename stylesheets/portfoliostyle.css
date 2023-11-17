@@ -1,0 +1,97 @@
+ * {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+        .container {
+            background-color: #1C96B8;
+            padding: 10px;
+            min-height: calc(100vh - 100px); 
+        }
+
+ .header-container {
+    display: flex;
+    align-items: center; /* Vertically center the logo and navigation */
+    justify-content: space-between; /* Spread the logo and navigation to the edges */
+    background-color: #22C0EA;
+    padding: 10px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 200px; /* Adjust the max-width as needed */
+  height: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+  float: none;
+  margin-bottom: 10px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.topnav {
+    float: none;
+  overflow: hidden;
+  text-align: right;
+}
+
+.topnav a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 2%; /* Adjust the padding as needed */
+  text-decoration: none;
+  margin: 5px auto;
+}
+
+.topnav a:hover {
+  background-color: #1C96B8;
+  color: white;
+}
+
+        /* Custom styles for columns */
+        .custom-column {
+            background-color: #ffffff;
+            /* Change the background color */
+            color: #333333;
+            /* Change the text color */
+            border: 1px solid #dddddd;
+            /* Add a border */
+            padding: 10px;
+            /* Add some padding */
+            margin-bottom: 20px;
+            /* Add margin between columns */
+        }
+        .custom-column .card {
+              border: none;
+        }
+
+
+        /* Style for the card body */
+        .custom-column .card-body {
+            font-size: 16px;
+            /* Change the font size */
+        }
+          .custom-column .card-body img{
+            margin-right: 20px;
+        }
+        /* Style the footer */
+        .footer-container {
+            background-color: #22C0EA;
+            padding: 10px;
+            font-size: 48px;
+            /* Adjust the margin and padding as needed */
+            bottom: 0;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            margin: 0 10px;
+        }

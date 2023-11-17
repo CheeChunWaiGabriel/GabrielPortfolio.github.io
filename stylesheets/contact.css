@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 Nov, 2023, 2:53:51 PM
+    Author     : 22022050
+*/
+* {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: Tahoma, sans-serif;
+        }
+
+    .header-container {
+    display: flex;
+    align-items: center; /* Vertically center the logo and navigation */
+    justify-content: space-between; /* Spread the logo and navigation to the edges */
+    background-color: #22C0EA;
+    padding: 10px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 200px; /* Adjust the max-width as needed */
+  height: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+  float: none;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.topnav {
+    float: none;
+  overflow: hidden;
+  text-align: right;
+}
+
+.topnav a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 2%; /* Adjust the padding as needed */
+  text-decoration: none;
+  margin: 5px auto;
+}
+
+.topnav a:hover {
+  background-color: #1C96B8;
+  color: white;
+}
+        .header {
+  grid-area: header;
+  background-color:#1C96B8;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  font-family: Tahoma, sans-serif;
+}
+
+        /* Style the content */
+        .content {
+            background-color: #6BD2EE;
+            padding: 10px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content h1 {
+            color: black;
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .content h2 {
+            color: black;
+            font-size: 42px;
+            margin: 0;
+        }
+
+
+        /* Style the footer */
+        footer {
+            background-color: #22C0EA;
+            padding: 10px;
+            font-size: 48px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            margin: 0 10px;
+        }

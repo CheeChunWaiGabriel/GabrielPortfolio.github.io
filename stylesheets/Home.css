@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+}
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #22C0EA;
+  padding: 10px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  text-align: right;
+}
+
+.topnav a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 2%;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #1C96B8;
+  color: white;
+}
+
+.content {
+    background-color: #1C96B8;
+    padding: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Adjust this value based on your design */
+  background-color: #6BD2EE;
+  border: 5px solid #ccc;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.job {
+  font-size: 18px;
+  color: #555;
+}
+
+.bio {
+  margin: 20px 0;
+}
+@media only screen and (max-width: 600px) {
+    .header-container {
+        padding: 10px 5px;
+    }
+
+    .topnav {
+        text-align: center;
+    }
+
+    .topnav a {
+        display: block;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .content {
+        max-width: 50%;
+        max-height: 50%;
+    }
+    
+    .card {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .name {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .job {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+    footer {
+        padding: 5px;
+        font-size: 18px;
+    }
+    
+}
