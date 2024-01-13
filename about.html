@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="stylesheets/Home.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+<nav class="navbar navbar-expand-sm bg-info navbar-dark">
+
+  <div class="container-fluid">
+      <!-- Links --><a class="navbar-brand" href="index.php">
+          <div class="logo">
+            <img src="website resources/Untitled-1.png" alt=""/>
+        </div>
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Projects</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="android.html">Android</a></li>
+    <li><a class="dropdown-item" href="photos.html">Photos</a></li>
+    <li><a class="dropdown-item" href="websites.html">PHP and HTML</a></li>
+  </ul>
+</li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+  </div>
+  </div>
+</nav>
+        <style>
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color:#1C96B8;
+}
+
+ul.breadcrumb li {display: inline;}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {color: green;}
+</style>
+    </header>
+    
+    <section class="content">                  
+  <ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li> >
+    <li class="active">About</li>        
+  </ul>
+
+        <h1>About Me</h1>
+        <div class="card bg-info text-white">
+            <div class="card-body">
+            <img class="profile-image" src="website resources/mugshot.png" alt="Your Name">
+            <div>
+                <h2 class="name">Chee Chun Wai Gabriel</h2>
+                <p class="job">Programmer/Artist</p>
+                <p class="bio">A fan of media franchises like Pokémon and Transformers, Gabriel is a freelance designer that often doodles stuff related to both - and more depending on what he's interested in. He's also a somewhat decent programmer. He hopes to one day do something to contribute officially to something that he likes.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+      <footer>
+        <div class="footer-links">
+            <h2>My Socials</h2>
+           <a href="https://www.linkedin.com/in/gabriel-chee-6b30b0239/">
+               <img src="website resources/socials/LI-In-Bug copy.jpg" alt="Linkedin" width="70" height="70"/>
+            </a>
+            <a href="https://twitter.com/poliwag06">
+                <img src="website resources/socials/X_logo_2023_(white).png" alt="Twitter" width="70" height="70"/>
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

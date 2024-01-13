@@ -4,17 +4,18 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/Portfolio/photos.php</file>
-            <file>file:/C:/xampp/htdocs/Portfolio/contact.php</file>
             <file>file:/C:/xampp/htdocs/Portfolio/websites.php</file>
             <file>file:/C:/xampp/htdocs/Portfolio/stylesheets/portfoliostyle.css</file>
             <file>file:/C:/xampp/htdocs/Portfolio/index.php</file>
             <file>file:/C:/xampp/htdocs/Portfolio/stylesheets/aboutstyle.css</file>
-            <file>file:/C:/xampp/htdocs/Portfolio/about.php</file>
-            <file>file:/C:/xampp/htdocs/Portfolio/projects.php</file>
             <file>file:/C:/xampp/htdocs/Portfolio/stylesheets/contact.css</file>
             <file>file:/C:/xampp/htdocs/Portfolio/android.php</file>
-            <file>file:/C:/xampp/htdocs/Portfolio/stylesheets/Projectspecific.css</file>
+            <file>file:/C:/xampp/htdocs/Portfolio/docontact.php</file>
             <file>file:/C:/xampp/htdocs/Portfolio/stylesheets/Home.css</file>
+            <file>file:/C:/xampp/htdocs/Portfolio/contact.php</file>
+            <file>file:/C:/xampp/htdocs/Portfolio/about.php</file>
+            <file>file:/C:/xampp/htdocs/Portfolio/projects.php</file>
+            <file>file:/C:/xampp/htdocs/Portfolio/stylesheets/Projectspecific.css</file>
         </group>
     </open-files>
 </project-private>

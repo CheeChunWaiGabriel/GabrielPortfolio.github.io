@@ -33,40 +33,39 @@ body {
   height: auto;
 }
 
-.topnav {
-  overflow: hidden;
-  text-align: right;
-}
-
-.topnav a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 2%;
-  text-decoration: none;
-}
-
-.topnav a:hover {
-  background-color: #1C96B8;
-  color: white;
-}
-
 .content {
-    background-color: #1C96B8;
-    padding: 10px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: #1C96B8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-container { /* Change to your desired background color */
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-container centered-video {
+   display: block;
+   margin: 0 auto;
+}
+
+.project-container title{
+    color: #000;
+}
+.project-container description {
+    color: #000;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 600px; /* Adjust this value based on your design */
+  width: 50%;
+  max-width: 600px;
   background-color: #6BD2EE;
   border: 5px solid #ccc;
   padding: 20px;
@@ -94,45 +93,80 @@ body {
 .bio {
   margin: 20px 0;
 }
+
+
+
+/* Style the footer */
+footer {
+  background-color: #22C0EA;
+  padding: 10px;
+  font-size: 48px;
+}
+
+.footer-links {
+   text-align: center;
+   margin-top: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
 @media only screen and (max-width: 600px) {
-    .header-container {
-        padding: 10px 5px;
-    }
+  .header-container {
+    padding: 10px 5px;
+  }
 
-    .topnav {
-        text-align: center;
-    }
+  nav {
+    text-align: center;
+  }
+  
+  nav ul {
+      flex-direction: column; /* Stack navigation vertically on smaller screens */
+   }
 
-    .topnav a {
-        display: block;
-        width: 50%;
-        box-sizing: border-box;
-    }
+   nav ul li {
+      margin-right: 0; /* Remove right margin to stack items without spacing */
+      margin-bottom: 10px; /* Add some space between stacked items */
+   }
+ nav ul li a {
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
 
-    .logo {
-        margin-bottom: 20px;
-    }
+  .content {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+     .project-container {
+      padding: 10px;
+   }
 
-    .content {
-        max-width: 50%;
-        max-height: 50%;
-    }
-    
-    .card {
-    padding: 10px; /* Adjust padding for smaller screens */
+   .centered-video {
+      width: 100%; /* Adjust the width for smaller screens */
+   }
+
+  .card {
+    padding: 10px;
   }
 
   .name {
-    font-size: 20px; /* Adjust font size for smaller screens */
+    font-size: 20px;
   }
 
   .job {
-    font-size: 16px; /* Adjust font size for smaller screens */
+    font-size: 16px;
   }
 
-    footer {
-        padding: 5px;
-        font-size: 18px;
-    }
-    
+  footer {
+    padding: 5px;
+    font-size: 18px;
+  }
 }
+    

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="stylesheets/portfoliostyle.css">
+<style>
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color:#1C96B8;
+}
+
+ul.breadcrumb li {display: inline;}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {color: green;}
+</style>
+</head>
+<body>
+ <header>
+       
+<nav class="navbar navbar-expand-sm bg-info navbar-dark">
+
+  <div class="container-fluid">
+<a class="navbar-brand" href="index.html">
+          <div class="logo">
+            <img src="website resources/Untitled-1.png" alt=""/>
+        </div>
+      </a>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown">Projects</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="android.html">Android</a></li>
+    <li><a class="dropdown-item" href="photos.html">Photos</a></li>
+    <li><a class="dropdown-item" href="websites.html">PHP and HTML</a></li>
+  </ul>
+</li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+  </div>
+  </div>
+</nav>
+</header>
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li> >
+            <li class="active">Photos</li>        
+          </ul>
+        <h1>Photos</h1>
+        <!-- Create a row -->
+        <div class="row">
+            <!-- Define columns for different screen sizes -->
+            <div class="col-md-4 custom-column">
+    <a href="#lightbox1" data-toggle="modal" data-target="#lightbox1">
+        <div class="card">
+            <div class="card-body">
+                <img src="website resources/Photos/Photo 1.jpg" alt="" height="200px" width="320px"/>
+                <h2>Lilly Pads</h2>
+            </div>
+        </div>
+    </a>
+</div>
+            
+            <div class="col-md-4 custom-column">
+    <a href="#lightbox2" data-toggle="modal" data-target="#lightbox2">
+        <div class="card">
+            <div class="card-body">
+                <img src="website resources/Photos/Photo 2.jpg" alt="" height="200px" width="320px"/>
+                <h2>Resting Toys</h2>
+            </div>
+        </div>
+    </a>
+</div>
+                      <div class="col-md-4 custom-column">
+    <a href="#lightbox3" data-toggle="modal" data-target="#lightbox3">
+        <div class="card">
+            <div class="card-body">
+                <img src="website resources/Photos/Photo 3a.jpg" alt="" height="200px" width="320px"/>
+                <h2>Racing The Colossus</h2>
+            </div>
+        </div>
+    </a>
+</div>
+            <div class="col-md-4 custom-column">
+    <a href="#lightbox4" data-toggle="modal" data-target="#lightbox4">
+        <div class="card">
+            <div class="card-body">
+                <img src="website resources/Photos/Photo 4.jpg" alt="" height="200px" width="320px"/>
+                <h2>Owl Mayhem</h2>
+            </div>
+        </div>
+    </a>
+</div>
+            <div class="col-md-4 custom-column">
+    <a href="#lightbox5" data-toggle="modal" data-target="#lightbox5">
+        <div class="card">
+            <div class="card-body">
+                <img src="website resources/Photos/Photo 5.jpg" alt="" height="200px" width="320px"/>
+                <h2>Heroes United</h2>
+            </div>
+        </div>
+    </a>
+</div>
+        </div>       
+<!--        <a href="projects.php" style="color: #6BD2EE;">Back to all projects</a>-->
+              </div>
+   <footer style="background-color: #22C0EA;">
+        <div class="footer-links">
+            <h2>My Socials</h2>
+           <a href="https://www.linkedin.com/in/gabriel-chee-6b30b0239/">
+               <img src="website resources/socials/LI-In-Bug copy.jpg" alt="Linkedin" width="70" height="70"/>
+            </a>
+             <a href="https://twitter.com/poliwag06">
+                <img src="website resources/socials/X_logo_2023_(white).png" alt="Twitter" width="70" height="70"/>
+            </a>
+        </div>
+    </footer>
+    <!-- Lightbox Section 1 -->
+<div class="modal fade" id="lightbox1" tabindex="-1" role="dialog" aria-labelledby="lightbox1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Content for the first section of the lightbox -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="lightbox1Label">Lilly Pads</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add your content for the first section here, such as a larger image or additional information -->
+                <img src="website resources/Photos/Photo 1.jpg" alt="" class="img-fluid"/>
+                <p>
+This photograph captures the enchanting allure of lilypads (to me at least-I've not seen one in real life!) 
+gracefully situated outside the Art Science Museum during a leisurely exploration of Marina Bay. 
+The composition is thoughtfully executed from a (slightly) elevated vantage point, 
+employing a high-angle perspective that imparts a sense of sophistication and grandeur to the scene.
+</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Repeat the above code for lightbox sections 2 and 3, with unique IDs and content -->
+<!-- Lightbox Section  -->
+<div class="modal fade" id="lightbox2" tabindex="-1" role="dialog" aria-labelledby="lightbox2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Content for the first section of the lightbox -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="lightbox2Label">Resting Toys</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add your content for the first section here, such as a larger image or additional information -->
+               <img src="website resources/Photos/Photo 2.jpg" alt="" class="img-fluid"/>
+                <p>This high-angled photograph was captured in the vicinity of 313@Somerset, 
+                    where a curated collection of personal Transformers toys accompanied me on an exploration of S*CAPE.
+                    Due to the absence of a traditional backyard unlike other Transformers collectors, 
+                    I often venture beyond the confines of routine indoor settings to snap cool pictures of them, 
+                    risking exposure to external environments.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" id="lightbox3" tabindex="-1" role="dialog" aria-labelledby="lightbox3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Content for the first section of the lightbox -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="lightbox3Label">Racing the Colossus</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add your content for the first section here, such as a larger image or additional information -->
+               <img src="website resources/Photos/Photo 3a.jpg" alt="" class="img-fluid"/>
+                <p>This photograph artfully juxtaposes a diminutive Transformers toy car I brought along with a life-sized Lego Formula 1 model on display outside Ngee Ann City.
+                   The visual narrative unfolds as an intriguing juxtaposition, accentuating the scale disparity between the meticulously detailed miniature and the grandeur of the life-sized counterpart.
+                 This deliberate composition invites contemplation on the perceived competition between the two, 
+                 cleverly playing with the viewer's imagination. 
+                 The choice of the iconic F1 season setting enhances the thematic resonance, 
+                 contributing to the overall narrative depth of the photograph.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+        <div class="modal fade" id="lightbox4" tabindex="-1" role="dialog" aria-labelledby="lightbox4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Content for the first section of the lightbox -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="lightbox4Label">Owl Mayhem</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add your content for the first section here, such as a larger image or additional information -->
+               <img src="website resources/Photos/Photo 4.jpg" alt="" class="img-fluid"/>
+                <p>While I initially found delight in the inauguration of the Pokemon Center store at Jewel, 
+                    subsequent visits revealed a somewhat subdued experience. 
+                    This particular photograph is a testament to the numerous excursions I made to the store, 
+                    this occassion is accompanied by a curated selection of my cherished Pokemon plushes, in this case the Pokemon Rowlet.
+                   In the spirit of the adage, "Birds of a feather flock together," 
+                   this image encapsulates a thoughtful convergence of personal interests, 
+                   symbolized by the endearing Rowlet plushes. 
+                   The deliberate juxtaposition of these collectibles within the context of the Pokemon Center store-my tiny one surrounded by many larger ones,
+                   evokes a sense of unity and shared passion. 
+                   The composition of the photograph invites contemplation on the symbiotic relationship between me
+                   and my cherished plush toy, elevating the narrative beyond mere indulgence into a nuanced exploration of personal affinities 
+                   and the spaces that facilitate their expression.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="modal fade" id="lightbox5" tabindex="-1" role="dialog" aria-labelledby="lightbox5Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Content for the first section of the lightbox -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="lightbox5Label">Heroes United</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add your content for the first section here, such as a larger image or additional information -->
+                                <img src="website resources/Photos/Photo 5.jpg" alt=""  class="img-fluid"/>
+                <p>In a departure from my typical focus on personal interests such as Transformers or Pokemon, I captured this photograph-and moment-for its novelty during a visit to City Square Mall. 
+                    This particular event the picture was taken at served as a prelude to an upcoming Comic Convention, an event that I discovered in 2022 and attended both during that year and the year after.
+                   Despite my limited engagement with characters from popular culture beyond my personal pursuits,
+                   the photograph encapsulates a captivating moment of surrealism-after all,
+                   it is the meeting of these diverse characters-cultural icons even-in front of my very own eyes.
+                   The deliberate choice to document this unique intersection of characters reflects a discerning eye for cultural phenomena 
+                   and serves as a testament to the broader significance of communal events that celebrate the richness of pop culture.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

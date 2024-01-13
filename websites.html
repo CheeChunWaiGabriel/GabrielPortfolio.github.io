@@ -5,45 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP and HTML</title>
     <!-- Include Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheets/portfoliostyle.css">
+     <style>
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color:#1C96B8;
+}
+
+ul.breadcrumb li {display: inline;}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {color: green;}
+</style>
 </head>
 <body>
         <header>
-    <div class="header-container">
-        <div class="logo">
+  
+ <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+
+  <div class="container-fluid">
+      <!-- Links --><a class="navbar-brand" href="index.html">
+          <div class="logo">
             <img src="website resources/Untitled-1.png" alt=""/>
         </div>
-        <div class="breadcrumbs">
-    <a href="index.php">Home</a> >
-    <a href="projects.php">Projects</a> >
-    <?php
-    $currentPage = basename($_SERVER['PHP_SELF']);
-    switch ($currentPage) {
-        case 'android.php':
-            echo 'Android';
-            break;
-        case 'photos.php':
-            echo 'Photos';
-            break;
-        case 'websites.php':
-            echo 'Websites';
-            break;
-        // Add more cases for other pages if needed
-        default:
-            echo 'Unknown Page';
-    }
-    ?>
-</div>
-        <div class="topnav">
-            <a href="index.php">Home</a>
-            <a href="about.php" <?php if(basename($_SERVER['PHP_SELF']) == 'about.php') echo 'class="active"'; ?>>About</a>
-            <a href="projects.php" <?php if(basename($_SERVER['PHP_SELF']) == 'projects.php') echo 'class="active"'; ?>>Projects</a>
-            <a href="contact.php" <?php if(basename($_SERVER['PHP_SELF']) == 'contact.php') echo 'class="active"'; ?>>Contact</a>
-        </div>
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="projects.html" role="button" data-bs-toggle="dropdown">Projects</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="android.html">Android</a></li>
+    <li><a class="dropdown-item" href="photos.html">Photos</a></li>
+    <li><a class="dropdown-item" href="websites.html">PHP and HTML</a></li>
+  </ul>
+</li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+  </div>
+  </div>
+</nav>
     </div>
 </header>
     <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li> >
+            <li class="active">PHP and HTML Projects</li>        
+          </ul>
         <h1>PHP and HTML Projects</h1>
         <!-- Create a row -->
         <div class="row">
@@ -110,23 +135,25 @@
                 </div>
             </div>
         </div>
-                  <a href="projects.php" style="color: #6BD2EE;">Back to all projects</a>
+<!--                  <a href="projects.php" style="color: #6BD2EE;">Back to all projects</a>-->
     </div>
-    <footer class="footer-container">
+      <footer class="footer-container">
         <div class="footer-links">
-            <h2>My Socials</h2>
-            <a href="https://www.linkedin.com/in/gabriel-chee-6b30b0239/">
-                <img src="website resources/socials/LI-In-Bug.png" alt="Linkedin" width="70" height="70"/>
+           <h2>My Socials</h2>
+           <a href="https://www.linkedin.com/in/gabriel-chee-6b30b0239/">
+               <img src="website resources/socials/LI-In-Bug copy.jpg" alt="Linkedin" width="70" height="70"/>
             </a>
-            <a href="https://github.com/CheeChunWaiGabriel">
-                <img src="website resources/socials/github-mark-white.png" alt="GitHub" width="70" height="70"/>
+             <a href="https://twitter.com/poliwag06">
+                <img src="website resources/socials/X_logo_2023_(white).png" alt="Twitter" width="70" height="70"/>
             </a>
         </div>
     </footer>
     <!-- Include Bootstrap JS and jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
 

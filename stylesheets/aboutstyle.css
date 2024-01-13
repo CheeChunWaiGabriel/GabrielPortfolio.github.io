@@ -19,15 +19,13 @@ body {
 
 .logo {
   width: 100%;
-  max-width: 200px; /* Adjust the max-width as needed */
+  max-width: 200px;
   height: auto;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  text-align: center;
-  float: none;
   margin-bottom: 10px;
 }
 
@@ -36,47 +34,50 @@ body {
   height: auto;
 }
 
-.topnav {
-    float: none;
+nav {
   overflow: hidden;
   text-align: right;
 }
 
-.topnav a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 2%; /* Adjust the padding as needed */
-  text-decoration: none;
-  margin: 5px auto;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.topnav a:hover {
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 2%;
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover {
   background-color: #1C96B8;
   color: white;
 }
 
 .content {
-    background-color: #1C96B8;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: #1C96B8;
+  padding: 10px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.centered-video {
-    width: 100%; /* Make the video fill the container */
-    max-width: 100%; /* Ensure the video doesn't exceed its natural size */
-    display: block; /* Make the video block-level for centering */
-    margin: 0 auto; /* Center the video horizontally */
-}
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 600px; /* Adjust this value based on your design */
+  max-width: 600px;
   background-color: #6BD2EE;
   border: 5px solid #ccc;
   padding: 20px;
@@ -105,29 +106,47 @@ body {
   margin: 20px 0;
 }
 
-    .project-container {
-        max-width: 100%;
-        max-height: 100%;
-        text-align: center; /* Center the content within the container */
-    }
-    video {
-    width: 100%; /* Make the video fill the container */
-    max-width: 100%; /* Ensure the video doesn't exceed its natural size */
-    display: inline-block; /* Make the video inline-block for centering */
-}
+@media only screen and (max-width: 600px) {
+  .header-container {
+    padding: 10px 5px;
+  }
 
-footer {
-  background-color: #22C0EA;
-  padding: 10px;
-  font-size: 24px;
-  width: 100%;
-}
+  nav {
+    text-align: center;
+  }
 
-.footer-links a {
-  text-decoration: none;
-  margin: 0 2%; /* Adjust the margin as needed */
+  nav a {
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .content {
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  .card {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .name {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .job {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  footer {
+    padding: 5px;
+    font-size: 18px;
+  }
 }
-        
 
        
         

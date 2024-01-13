@@ -15,14 +15,18 @@ and open the template in the editor.
         body {
             margin: 0;
             font-family: Tahoma, sans-serif;
+            display: flex;
+    flex-direction: column;
+    min-height: 100vh;
         }
 
     .header-container {
-    display: flex;
-    align-items: center; /* Vertically center the logo and navigation */
-    justify-content: space-between; /* Spread the logo and navigation to the edges */
-    background-color: #22C0EA;
-    padding: 10px;
+     display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #22C0EA;
+  padding: 10px;
 }
 
 .logo {
@@ -44,25 +48,65 @@ and open the template in the editor.
   height: auto;
 }
 
-.topnav {
-    float: none;
+.header breadcrumbs {
+   width: 5px;
+}
+
+nav {
   overflow: hidden;
   text-align: right;
 }
 
-.topnav a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 2%; /* Adjust the padding as needed */
-  text-decoration: none;
-  margin: 5px auto;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.topnav a:hover {
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 2%;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
   background-color: #1C96B8;
   color: white;
 }
+
+nav ul li a.active {
+    color: #1C96B8;
+}
+
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ddd;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #87CEEB; /* Light blue background color */
+    color: #000; /* Black text color */
+}
+
         .header {
   grid-area: header;
   background-color:#1C96B8;
@@ -76,11 +120,11 @@ and open the template in the editor.
         .content {
             background-color: #6BD2EE;
             padding: 10px;
-            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+    flex: 1;
         }
 
         .content h1 {
@@ -94,16 +138,111 @@ and open the template in the editor.
             font-size: 42px;
             margin: 0;
         }
+        
+ .form-horizontal {
+    max-width: 600px;
+    margin: 0 auto;
+}
 
+.form-group {
+    margin-bottom: 15px;
+}
 
-        /* Style the footer */
-        footer {
-            background-color: #22C0EA;
+.form-control {
+    width: 100%;
+    font-size: 16px; /* Adjust font size for better readability */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+textarea {
+    width: 100%;
+    font-size: 16px; /* Adjust font size for better readability */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.send-button {
+    width: 100%;
+    font-size: 18px; /* Adjust font size for better readability */
+    margin-top: 10px;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item {
+    margin-bottom: 10px;
+}
+
+.contact-text {
+    font-size: 16px; /* Adjust font size for better readability */
+    margin-left: 10px; /* Add margin for better spacing */
+}
+
+        .footer-links {
+               background-color: #22C0EA;
             padding: 10px;
             font-size: 48px;
-        }
+   text-align: center;
+   margin:0;
+}
 
-        .footer-links a {
-            text-decoration: none;
-            margin: 0 10px;
-        }
+.footer-links a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+
+  
+@media only screen and (max-width: 600px) {
+    .header-container {
+        padding: 10px 5px;
+    }
+
+   nav {
+    text-align: center;
+  }
+  
+  nav ul {
+      flex-direction: column; /* Stack navigation vertically on smaller screens */
+   }
+
+   nav ul li {
+      margin-right: 0; /* Remove right margin to stack items without spacing */
+      margin-bottom: 10px; /* Add some space between stacked items */
+   }
+ nav ul li a {
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+  }
+    .logo {
+        margin-bottom: 20px;
+    }
+  
+  .form-horizontal {
+        max-width: 100%;
+    }
+
+.form-group {
+    max-width: 80%;
+    align-content: center;
+}
+
+.form-control{
+    max-width: 80%;
+    align-content: center;
+}
+    /* Adjust the button width for smaller screens */
+    .send-button {
+        width: auto;
+        
+    }
+
+    footer {
+        padding: 5px;
+        font-size: 18px;
+    }
+    
+}
