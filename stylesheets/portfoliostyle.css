@@ -112,7 +112,6 @@ row.custom-column .card-body img {
   margin-right: 20px;
 }
 
-
 .footer-container {
   background-color: #22C0EA;
   padding: 10px;
@@ -127,8 +126,8 @@ row.custom-column .card-body img {
   margin: 0 10px;
 }
 
-<!--footer-->
-<!--footer {
+
+footer {
   background-color: #22C0EA;
   padding: 10px;
   font-size: 48px;
